@@ -3,7 +3,7 @@ import { ArrowLeft, ArrowRight, ShieldCheck, Sparkles } from "lucide-react";
 function Login({ onBack }) {
   const handleLogin = () => {
     const apiUrl = (
-      import.meta.env.VITE_API_URL || "http://design.getminidesk.com/api"
+      import.meta.env.VITE_API_URL || "https://design.getminidesk.com/api"
     ).replace(/\/$/, "");
 
     window.location.assign(`${apiUrl}/auth/google`);
