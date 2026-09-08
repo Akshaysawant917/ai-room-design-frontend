@@ -2,7 +2,11 @@ import { ArrowLeft, ArrowRight, ShieldCheck, Sparkles } from "lucide-react";
 
 function Login({ onBack }) {
   const handleLogin = () => {
-    window.location.assign("http://localhost:5000/api/auth/google");
+    const apiUrl = (
+      import.meta.env.VITE_API_URL || "http://localhost:5000/api"
+    ).replace(/\/$/, "");
+
+    window.location.assign(`${apiUrl}/auth/google`);
   };
 
   return (
