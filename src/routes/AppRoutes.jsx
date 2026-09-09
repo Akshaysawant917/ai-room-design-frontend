@@ -7,6 +7,11 @@ import {
   useParams,
 } from "react-router-dom";
 import AuthCallback from "../components/auth/AuthCallback";
+import AiDisclaimerPage from "../components/legal/AiDisclaimerPage";
+import ContactPage from "../components/legal/ContactPage";
+import PrivacyPolicyPage from "../components/legal/PrivacyPolicyPage";
+import RefundPolicyPage from "../components/legal/RefundPolicyPage";
+import TermsPage from "../components/legal/TermsPage";
 import Login from "../components/auth/Login";
 import ProtectedRoute from "../components/common/ProtectedRoute";
 import Footer from "../components/layout/Footer";
@@ -109,6 +114,51 @@ function AppRoutes() {
           element={<Login onBack={() => navigate("/transform/review")} />}
         />
         <Route path="/auth/callback" element={<AuthCallback />} />
+        <Route
+          path="/privacy-policy"
+          element={
+            <>
+              <PrivacyPolicyPage />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/terms"
+          element={
+            <>
+              <TermsPage />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/refund-policy"
+          element={
+            <>
+              <RefundPolicyPage />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <>
+              <ContactPage />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/ai-disclaimer"
+          element={
+            <>
+              <AiDisclaimerPage />
+              <Footer />
+            </>
+          }
+        />
         <Route
           path="/transform/:step"
           element={

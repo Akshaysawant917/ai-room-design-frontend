@@ -27,15 +27,21 @@ function Footer() {
           <a className="hover:text-[#f6f3ee]" href="#pricing">
             Pricing
           </a>
-          <a className="hover:text-[#f6f3ee]" href="#">
-            Privacy
-          </a>
-          <a className="hover:text-[#f6f3ee]" href="#">
-            Terms
-          </a>
-          <a className="hover:text-[#f6f3ee]" href="mailto:hello@aihome.in">
-            Contact
-          </a>
+          <Link to="/privacy-policy" className="hover:text-[#f6f3ee]">
+            Privacy Policy
+          </Link>
+          <Link to="/terms" className="hover:text-[#f6f3ee]">
+            Terms of Service
+          </Link>
+          <Link to="/refund-policy" className="hover:text-[#f6f3ee]">
+            Refund &amp; Cancellation
+          </Link>
+          <Link to="/ai-disclaimer" className="hover:text-[#f6f3ee]">
+            AI Disclaimer
+          </Link>
+          <Link to="/contact" className="hover:text-[#f6f3ee]">
+            Contact / Support
+          </Link>
         </div>
       </div>
       <div className="flex flex-col gap-2 pt-5 text-[10px] text-[#888982] sm:flex-row sm:justify-between">
