@@ -418,11 +418,10 @@ function ResultView({ transformation }) {
           <a
             className="mt-5 inline-flex items-center gap-4 bg-[#20221f] px-5 py-3 text-xs font-semibold text-[#f6f3ee] transition hover:bg-black"
             href={transformation.generatedImageUrl}
-            target="_blank"
-            rel="noreferrer"
+            download
           >
             <Download size={16} />
-            Open image
+            Download image
           </a>
         )}
       </div>

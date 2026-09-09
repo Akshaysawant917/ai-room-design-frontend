@@ -103,6 +103,35 @@ function Home({ onStart }) {
           }
           text="Whether you're working with ₹10k or ₹1L+, choose your budget and see how your space could be transformed around it."
         />
+        <div className="mt-12 grid items-stretch gap-3 lg:grid-cols-[1fr_auto_1fr]">
+          <ShowcaseImage
+            image="bedroom.jpg"
+            alt="Indian kitchen before redesign"
+            label="Before"
+          />
+
+          <div className="flex items-center justify-center py-2 lg:px-3">
+            <div className="flex h-10 w-10 items-center justify-center border border-black/10 bg-white">
+              <ArrowRight size={16} />
+            </div>
+          </div>
+
+          <ShowcaseImage
+            image="bedroom-ai.jpg"
+            alt="AI redesigned Indian kitchen"
+            label="AI concept"
+            after
+          />
+        </div>
+
+        <div className="mt-16 mb-12 text-center">
+          <p className="text-[10px] font-bold uppercase tracking-[1.7px] text-[#bd5c42]">
+            More transformations
+          </p>
+          <h3 className="mt-2 text-2xl font-medium tracking-tight sm:text-3xl">
+            See what AI can do with your space.
+          </h3>
+        </div>
 
         <div className="mt-12 grid items-stretch gap-3 lg:grid-cols-[1fr_auto_1fr]">
           <ShowcaseImage
@@ -118,23 +147,12 @@ function Home({ onStart }) {
           </div>
 
           <ShowcaseImage
-            image="Kitchen-ai.png"
+            image="Kitchen-ai2.png"
             alt="AI redesigned Indian kitchen"
             label="AI concept"
             after
           />
         </div>
-
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
-          <span className="border border-black/10 bg-[#f7f5f0] px-4 py-2 text-xs font-medium">
-            Example budget: ₹10–20k
-          </span>
-
-          <span className="text-xs text-black/40">
-            Your budget can be different.
-          </span>
-        </div>
-
         <div className="mx-auto mt-8 max-w-2xl text-center">
           <p className="text-base leading-7 text-black/60 sm:text-lg">
             Want to spend ₹20k, ₹50k or ₹1L+?
@@ -167,21 +185,21 @@ function Home({ onStart }) {
 
           <div className="grid gap-4 md:grid-cols-3">
             <ShowcaseImage
-              image={ROOM_IMAGES.bedroom}
+              image="bedroom-ai.jpg"
               alt="AI bedroom interior concept"
               label="Bedroom"
             />
 
             <ShowcaseImage
-              image={ROOM_IMAGES.kitchen}
+              image="Kitchen-ai2.png"
               alt="AI kitchen interior concept"
               label="Kitchen"
             />
 
             <ShowcaseImage
-              image={ROOM_IMAGES.balcony}
+              image="hall-ai.png"
               alt="AI balcony interior concept"
-              label="Balcony"
+              label="Living Room"
             />
           </div>
         </div>
