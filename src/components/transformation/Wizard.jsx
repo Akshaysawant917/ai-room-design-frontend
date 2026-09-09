@@ -79,7 +79,7 @@ function Wizard({
           Step {stepIndex + 1} of 6
         </span>
         <span className="rounded-full border border-[#d8a293] px-2.5 py-1.5 text-[10px] text-[#bd5c42]">
-          ₹29 first · ₹79 after
+          ₹49 first · ₹99 after
         </span>
       </div>
 
@@ -457,7 +457,7 @@ function ReviewStep({
             Paid generation
           </span>
           <p className="mt-1 text-xs text-[#6e7169]">
-            ₹29 for your first generation, then ₹79 each.
+            ₹49 for your first generation, then 99 each.
           </p>
         </div>
         {error && <p className="text-xs text-[#a33d2c]">{error}</p>}
