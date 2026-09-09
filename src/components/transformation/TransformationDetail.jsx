@@ -59,43 +59,6 @@ function TransformationDetail() {
     loadTransformation();
   }, [id]);
 
-  const handleDownloadGeneratedImage = async (event) => {
-    event.preventDefault();
-
-    if (!transformation?.generatedImageUrl) {
-      return;
-    }
-
-    try {
-      const response = await fetch(transformation.generatedImageUrl);
-
-      if (!response.ok) {
-        throw new Error("Failed to fetch generated image");
-      }
-
-      const blob = await response.blob();
-      const objectUrl = URL.createObjectURL(blob);
-      const link = document.createElement("a");
-
-      link.href = objectUrl;
-      link.download = `ai-home-transform-${transformation.id || "design"}.png`;
-      link.rel = "noopener noreferrer";
-      document.body.appendChild(link);
-      link.click();
-      link.remove();
-
-      window.setTimeout(() => URL.revokeObjectURL(objectUrl), 1000);
-    } catch (error) {
-      const fallbackLink = document.createElement("a");
-      fallbackLink.href = transformation.generatedImageUrl;
-      fallbackLink.download = `ai-home-transform-${transformation.id || "design"}.png`;
-      fallbackLink.rel = "noopener noreferrer";
-      document.body.appendChild(fallbackLink);
-      fallbackLink.click();
-      fallbackLink.remove();
-    }
-  };
-
   useEffect(() => {
     if (
       !transformation ||
@@ -452,14 +415,15 @@ function ResultView({ transformation }) {
         </span>
 
         {transformation.generatedImageUrl && (
-          <button
-            type="button"
+          <a
             className="mt-5 inline-flex items-center gap-4 bg-[#20221f] px-5 py-3 text-xs font-semibold text-[#f6f3ee] transition hover:bg-black"
-            onClick={handleDownloadGeneratedImage}
+            href={transformation.generatedImageUrl}
+            target="_blank"
+            rel="noreferrer"
           >
             <Download size={16} />
-            Download image
-          </button>
+            Open image
+          </a>
         )}
       </div>
     </>
