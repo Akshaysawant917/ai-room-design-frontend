@@ -76,8 +76,8 @@ function TermsPage() {
           Current pricing is as follows:
         </p>
         <ul className="mt-3 list-disc space-y-2 pl-6">
-          <li>First transformation: ₹29</li>
-          <li>Additional transformations: ₹79 each</li>
+          <li>First transformation: ₹49</li>
+          <li>Additional transformations: ₹99 each</li>
         </ul>
         <p className="mt-3">
           These are individual transformation purchases, not subscriptions or

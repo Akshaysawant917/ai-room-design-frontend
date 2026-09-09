@@ -46,7 +46,7 @@ function Home({ onStart }) {
             </button>
 
             <span className="text-sm text-black/55">
-              First transformation <strong className="text-black">₹29</strong>
+              First transformation <strong className="text-black">₹49</strong>
             </span>
           </div>
 
@@ -69,7 +69,7 @@ function Home({ onStart }) {
             <p className="text-[10px] uppercase tracking-[0.16em] text-black/40">
               First transformation
             </p>
-            <p className="mt-1 text-xl font-semibold">₹29</p>
+            <p className="mt-1 text-xl font-semibold">₹49</p>
           </div>
         </div>
       </section>
@@ -384,7 +384,7 @@ function Home({ onStart }) {
             <h2 className="mt-5 text-4xl leading-[1.05] tracking-[-0.035em] sm:text-5xl">
               Try your first room
               <br />
-              <em className="font-serif font-normal">for ₹29.</em>
+              <em className="font-serif font-normal">for ₹49.</em>
             </h2>
 
             <p className="mt-5 text-sm leading-6 text-white/55">
@@ -393,9 +393,9 @@ function Home({ onStart }) {
           </div>
 
           <div className="border border-white/10">
-            <PriceRow amount="₹29" title="First transformation" />
+            <PriceRow amount="₹49" title="First transformation" />
 
-            <PriceRow amount="₹79" title="Every transformation after" />
+            <PriceRow amount="₹99" title="Every transformation after" />
 
             <div className="border-t border-white/10 p-5">
               <p className="mb-5 text-xs leading-5 text-white/45">
@@ -437,11 +437,11 @@ function Home({ onStart }) {
 
           <Faq
             q="How much does it cost?"
-            a="Your first transformation costs ₹29. Every transformation after that costs ₹79."
+            a="Your first transformation costs 49. Every transformation after that costs ₹99."
           />
 
           <Faq
-            q="Is ₹29 a subscription?"
+            q="Is ₹49 a subscription?"
             a="No. There is no subscription. You pay per transformation."
           />
 
@@ -481,14 +481,14 @@ function Home({ onStart }) {
           </h2>
 
           <p className="mx-auto mt-6 max-w-lg text-sm leading-6 text-black/55 sm:text-base">
-            Upload a photo and create your first AI room concept for ₹29.
+            Upload a photo and create your first AI room concept for ₹49.
           </p>
 
           <button
             onClick={onStart}
             className="group mt-8 inline-flex items-center gap-3 bg-[#171717] px-7 py-4 text-sm font-medium text-white transition hover:bg-black"
           >
-            Redesign my room — ₹29
+            Redesign my room — ₹49
             <ArrowRight
               size={17}
               className="transition-transform group-hover:translate-x-1"

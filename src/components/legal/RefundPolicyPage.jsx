@@ -21,8 +21,8 @@ function RefundPolicyPage() {
           Current pricing is as follows:
         </p>
         <ul className="mt-3 list-disc space-y-2 pl-6">
-          <li>First transformation: ₹29</li>
-          <li>Additional transformations: ₹79</li>
+          <li>First transformation: ₹49</li>
+          <li>Additional transformations: ₹99</li>
         </ul>
       </section>
 
