@@ -319,18 +319,16 @@ function GenerationExperience({
             return (
               <div
                 key={message.title}
-                className={`flex gap-3 transition-opacity ${
-                  index > generationStep ? "opacity-35" : "opacity-100"
-                }`}
+                className={`flex gap-3 transition-opacity ${index > generationStep ? "opacity-35" : "opacity-100"
+                  }`}
               >
                 <div
-                  className={`mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full border ${
-                    isDone
+                  className={`mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full border ${isDone
                       ? "border-[#20221f] bg-[#20221f] text-white"
                       : isActive
                         ? "border-[#bd5c42] text-[#bd5c42]"
                         : "border-[#d8d2c8] text-[#6e7169]"
-                  }`}
+                    }`}
                 >
                   {isDone ? (
                     <Check size={13} />
@@ -417,10 +415,10 @@ function ResultView({ transformation }) {
         {transformation.generatedImageUrl && (
           <a
             className="mt-5 inline-flex items-center gap-4 bg-[#20221f] px-5 py-3 text-xs font-semibold text-[#f6f3ee] transition hover:bg-black"
-            href={transformation.generatedImageUrl}
-            download="ai-home-transform-result.jpg"
-            target="_self"
-            rel="noopener noreferrer"
+            href={transformation.generatedImageUrl.replace(
+              "/image/upload/",
+              "/image/upload/fl_attachment/"
+            )}
           >
             <Download size={16} />
             Download image
